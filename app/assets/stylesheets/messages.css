@@ -8,14 +8,41 @@
 }
 
 .side-bar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 100px;
   padding: 0 20px;
+}
+
+.header-name a{
+font-size: 16px;
+color: #fafafa;
+text-decoration: none;　/* a要素特有の文字色を打ち消す */
+}
+
+.create-room a{
+  font-size: 10px;
+  padding: 14px;
+  border: 1px solid lightblue;
+  color: deepskyblue;
+  text-decoration: none;
 }
 
 .rooms {
   background-color: #2F3E51;
   height: calc(100vh - 100px);
   padding: 0 20px;
+  overflow: scroll;　/* roomが増えたらスクロールできる */
+}
+
+.room {
+  padding: 20px 0 40px;
+}
+
+.room-name a{
+  text-decoration: none;
+  color: white;
 }
 
 .chat {
