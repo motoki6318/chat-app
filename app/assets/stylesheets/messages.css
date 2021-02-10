@@ -120,7 +120,7 @@ text-decoration: none;　/* a要素特有の文字色を打ち消す */
   display: flex;
 }
 
-.form-massage {
+.form-message {
   border: none;
   height: 50px;
    /* 高さの指定でテキストが真ん中にくるのは？ */
