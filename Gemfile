@@ -62,3 +62,7 @@ gem 'mini_magick'
 gem 'image_processing', '~> 1.2'
 # 画像加工のツール
 
+gem 'rspec-rails'
+gem 'factory_bot_rails'
+gem 'faker'
+# テストで使うGem
