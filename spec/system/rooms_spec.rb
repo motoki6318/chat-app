@@ -13,7 +13,6 @@ RSpec.describe 'チャットルームの削除機能', type: :system do
     click_on(@room_user.room.name)
 
     # メッセージ情報を5つDBに追加する
-    binding.pry
     FactoryBot.create_list(:message, 5, room_id: @room_user.room.id, user_id: @room_user.user.id)
     # 「チャットを終了する」ボタンをクリックすることで、作成した5つのメッセージが削除されていることを確認する
     expect{click_on('チャットを終了する')}.to change{ Message.count }.by(-5)
