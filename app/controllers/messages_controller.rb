@@ -11,7 +11,7 @@ class MessagesController < ApplicationController
     @room = Room.find(params[:room_id])
     # 先に親であるroomのidを取得
     @message = @room.messages.new(message_params)
-    # メッセージを作る時に@roomで　どのルームかを明記
+    # メッセージを作る時に@roomでどのルームかを明記
     if @message.save
       redirect_to room_messages_path(@room)
     else
